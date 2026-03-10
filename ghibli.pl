@@ -64,7 +64,7 @@ nomination(the_wind_rises, academy_award_best_animated_feature).
 nomination(tale_of_princess_kaguya, academy_award_best_animated_feature).
 nomination(when_marnie_was_there, academy_award_best_animated_feature).
 nomination(the_red_turtle, academy_award_best_animated_feature).
-nomination(boy_and_the_heron, academy_award_best_animated_feature).
+nomination(the_boy_and_the_heron, academy_award_best_animated_feature).
 
 
 %~~~~~~~~~~~~~~~
