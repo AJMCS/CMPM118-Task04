@@ -80,7 +80,7 @@ top_movies(X) :-
 
 classic(X) :- 
     movie(X, _, Year), 
-    Year < 1990,
+    Year < 2005,
     (award(X, _); nomination(X, _)).
 
 modern_classic(X) :- 
