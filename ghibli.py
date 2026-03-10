@@ -30,19 +30,19 @@ def query(description: str, query: str, var: str = None):
 query("All movies and their genres", "movie(X, Genre, _)", var=["X", "Genre"])
 
 # Query all award winning movies
-query("Award winning movies", "award(X, _)", var="X")
+query("Award winning movies", "distinct(X, award(X, _))", var="X")
 
 # Query all nominated movies
-query("Nominated movies", "nomination(X, _)", var="X")
+query("Nominated movies", "distinct(X, nomination(X, _))", var="X")
 
 # Query the top movies (won OR nominated)
-query("Top movies", "top_movies(X)", var="X")
+query("Top movies", "distinct(X, top_movies(X))", var="X")
 
-# Query classic movies (pre-1990 + recognized)
-query("Classic movies", "classic(X)", var="X")
+# Query classic movies (pre-2005 + recognized)
+query("Classic movies", "distinct(X, classic(X))", var="X")
 
 # Query modern classics (post-2015 + recognized)
-query("Modern classics", "modern_classic(X)", var="X")
+query("Modern classics", "distinct(X, modern_classic(X))", var="X")
 
 # Query all Hayao Miyazaki movies
 query("Hayao Miyazaki films", "director(X, hayao_miyazaki)", var="X")
